@@ -19,7 +19,7 @@ function Hero(){
             <div className="bg-white  border-yellow-300 border-6 p-2">
                 <h1 className="text-5xl text-center lg:text-9xl">MEGA<br />LEADERBOARD</h1>
             </div>
-            <img className="w-2 absolute bottom-10 left-0 w-20 lg:w-40" src={duck} alt="" />
+            <img className="absolute bottom-10 left-0 w-20 lg:w-40" src={duck} alt="" />
             <div className='flex flex-col absolute bottom-10 gap-5 right-0'>
                 <img className='lg:w-20 w-10'  src={star} alt="" />
                 <img className='lg:w-20 w-10' src={star} alt="" />              

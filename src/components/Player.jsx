@@ -1,24 +1,38 @@
-import meduck from '../assets/icons/meducks.png'
-import exemplo from '../assets/imgs/players/exemplo.png'
+import heartImg from "../assets/icons/heart.png";
 
-function Player({index, name, meducks}) {
-    return(
-        <>
-        <li className="flex bg-white justify-between p-1 lg:p-3 rounded-[8px] md:rounded-2x  lg:text-5xl">
-            <div className="flex content-between items-center w-max gap-1 lg:gap-4 pl-2">
-                <p className="w-5 lg:w-15 text-center">{index < 10 ? `0${index}` : index}</p>
-                <div className="bg-black aspect-square  overflow-hidden h-7 rounded-[5px] lg:h-20 md:rounded-2xl">
-                    <img className='rounded-[5px] md:rounded-2xl' src={exemplo} alt="" />
-                </div>
-                <p className="">{name}</p>
-            </div>
-            <div className="flex justify-center items-center relative">
-                <img className='relative h-7 lg:h-20 -right-2/12' src={meduck} alt="" />
-                <p className="bg-black rounded-[8px] lg:h-20 h-7 pl-4 lg:pl-11 w-15 lg:w-40 flex items-center text-white">{meducks}</p>
-            </div>
-        </li>
-        </>
-    )
+function Player({ index, name, heart }) {
+  const heartsCount = Math.max(0, Math.floor(Number(heart) || 0));
+
+  return (
+    <li
+      className="flex justify-between items-center bg-white p-2 lg:p-4 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300"
+    >
+      {/* Player Info */}
+      <div className="flex items-center gap-3">
+        <div
+          className="bg-black border-4 border-yellow-300 aspect-square w-12 h-12 lg:w-20 lg:h-20 
+                        rounded-xl flex justify-center items-center shadow-inner"
+        >
+          <p className="text-yellow-400 font-bold text-lg md:text-3xl">
+            {index < 10 ? `0${index}` : index}
+          </p>
+        </div>
+        <p className="text-black font-semibold text-sm md:text-2xl">{name}</p>
+      </div>
+
+      {/* Hearts */}
+      <div className="flex items-center gap-2 lg:gap-4">
+        {Array.from({ length: heartsCount }, (_, i) => (
+          <img
+            key={i}
+            src={heartImg}
+            alt="heart"
+            className="h-6 w-6 lg:h-10 lg:w-10"
+          />
+        ))}
+      </div>
+    </li>
+  );
 }
 
 export default Player;
