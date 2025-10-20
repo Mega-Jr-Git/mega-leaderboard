@@ -8,7 +8,7 @@ Uma **landing page gamificada** que exibe a quantidade de vidas de cada membro d
 
 | Ambiente | Plataforma | Conta utilizada | Link de acesso |
 | --- | --- | --- | --- |
-| Produção | Netlify | mega.gerenciamento@megajunior.com.br | 🔗 Acesse o site aqui |
+| Produção | Netlify | mega.gerenciamento@megajunior.com.br | 🔗 https://megaleaderboard.netlify.app/ |
 
 ---
 
