@@ -30,7 +30,7 @@ const players = [
   { id: 28, name: "ivan_francisco", heart: 3 },
   { id: 29, name: "giovana_menas_muhl", heart: 3 },
   { id: 30, name: "samyr_arruda", heart: 3 },
-  { id: 31, name: "carlos_sales", heart: 3 },
+  { id: 31, name: "carlos_sales", heart: 2 },
 ];
 
 export default players;
