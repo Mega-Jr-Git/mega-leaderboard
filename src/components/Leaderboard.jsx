@@ -10,7 +10,7 @@ function Leaderboard() {
             <ul className="flex flex-col gap-2 md:gap-4">
                 {sortedPlayers.map((player, index) => {
                     return(
-                        <Player key={player.id} name={player.name} heart={player.heart} index={index + 1}/>
+                        <Player key={player.id} player={player} index={index + 1}/>
                     )
             })}
             </ul>

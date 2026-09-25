@@ -4,6 +4,7 @@ import Container from './components/Container'
 import Hero from './components/Hero'
 import Leaderboard from './components/Leaderboard'
 import LogoFooter from './components/LogoFooter'
+import PcdLegend from './components/PcdLegend'
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
       <Container>
         <BackgroundTop/>
         <Hero/>
+        <PcdLegend/>
         <Leaderboard/>
         <LogoFooter/>
       </Container>

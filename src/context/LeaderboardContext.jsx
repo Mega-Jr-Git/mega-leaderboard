@@ -1,22 +1,16 @@
-import { createContext } from "react";
+import { createContext, useMemo } from "react";
 import players from "../data/players";
+import { rankPlayers } from "../utils/pcd";
 
 export const LeaderboardContext = createContext();
 
 function LeaderboardProvider({ children }) {
-  const sortedPlayers = [...players].sort((playerX, playerY) => {
-    // Primeiro compara pelo número de corações (decrescente)
-    const heartDiff = playerY.heart - playerX.heart;
-    if (heartDiff !== 0) return heartDiff;
-
-    // Se tiverem o mesmo número de corações, ordena pelo nome (A-Z)
-    return playerX.name.localeCompare(playerY.name);
-  });
-
-  console.log(sortedPlayers);
+  // Aplica as regras do PCD (vidas, faltas internas, evento externo) e ordena o ranking.
+  // A ordem de desempate está documentada em utils/pcd.js.
+  const value = useMemo(() => ({ sortedPlayers: rankPlayers(players) }), []);
 
   return (
-    <LeaderboardContext.Provider value={{ sortedPlayers }}>
+    <LeaderboardContext.Provider value={value}>
       {children}
     </LeaderboardContext.Provider>
   );

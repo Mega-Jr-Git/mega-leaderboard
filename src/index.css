@@ -8,3 +8,8 @@
 @theme{
     --font-pixel: Pixelify Sans, 'sans-serif'
 }
+
+/* A fonte pixelada tem uma ligadura "fi" defeituosa (ex.: "firmino" aparecia como "Armino") */
+body {
+    font-variant-ligatures: none;
+}
