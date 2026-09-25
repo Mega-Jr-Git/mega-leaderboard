@@ -12,7 +12,7 @@ Uma **landing page gamificada** que exibe a quantidade de vidas de cada membro d
 
 ---
 
-## 🎯 Funcionalidades
+## 🎯 Funcionalidades teste
 
 - Exibe uma lista de jogadores ordenados por número de corações (pontuação).
 - Empates são resolvidos por **ordem alfabética** do nome.
