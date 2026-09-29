@@ -9,7 +9,7 @@
 // Só as quantidades aparecem no site. Os motivos ficam restritos ao membro e à gestão.
 const players = [
   { id: 1, name: "antonio_castro", heart: 3, absences: 0, externalEvents: 2 },
-  { id: 2, name: "arthur_cacciatore", heart: 3, absences: 0, externalEvents: 1 },
+  { id: 2, name: "arthur_cacciatore", heart: 3, absences: 1, externalEvents: 1 },
   { id: 3, name: "brenno_ostemberg", heart: 3, absences: 0, externalEvents: 1 },
   { id: 4, name: "djavan_loureiro", heart: 1, absences: 0, externalEvents: 0 },
   { id: 5, name: "edilson_enzo", heart: 3, absences: 0, externalEvents: 0 },
@@ -36,7 +36,7 @@ const players = [
   { id: 25, name: "gabriel_aquino", heart: 3, absences: 0, externalEvents: 0 },
   { id: 26, name: "yan_oliveira", heart: 3, absences: 0, externalEvents: 0 },
   { id: 27, name: "heitor_cacciatore", heart: 3, absences: 0, externalEvents: 1 },
-  { id: 28, name: "ivan_francisco", heart: 3, absences: 0, externalEvents: 1 },
+  { id: 28, name: "ivan_francisco", heart: 3, absences: 1, externalEvents: 1 },
   { id: 29, name: "giovana_muhl", heart: 3, absences: 0, externalEvents: 1 },
   { id: 30, name: "samyr_arruda", heart: 3, absences: 0, externalEvents: 0 },
   { id: 31, name: "carlos_sales", heart: 2, absences: 0, externalEvents: 0 },
