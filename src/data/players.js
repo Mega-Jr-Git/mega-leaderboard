@@ -28,7 +28,7 @@ const players = [
   { id: 18, name: "eduarda_moretto", heart: 3, absences: 0, externalEvents: 1 },
 
   { id: 19, name: "leticia_regina", heart: 3, absences: 0, externalEvents: 1 },
-  { id: 20, name: "amanda_lopes", heart: 3, absences: 0, externalEvents: 0 },
+  { id: 20, name: "amanda_lopes", heart: 3, absences: 0, externalEvents: 1 },
   { id: 21, name: "paulo_lima", heart: 3, absences: 0, externalEvents: 1 },
   { id: 22, name: "joao_menatti", heart: 3, absences: 0, externalEvents: 1 },
   { id: 23, name: "jhonathan_soares", heart: 3, absences: 0, externalEvents: 0 },
@@ -39,7 +39,7 @@ const players = [
   { id: 28, name: "ivan_francisco", heart: 3, absences: 1, externalEvents: 1 },
   { id: 29, name: "giovana_muhl", heart: 3, absences: 0, externalEvents: 1 },
   { id: 30, name: "samyr_arruda", heart: 3, absences: 0, externalEvents: 0 },
-  { id: 31, name: "carlos_sales", heart: 2, absences: 0, externalEvents: 0 },
+  { id: 31, name: "carlos_sales", heart: 1, absences: 1, externalEvents: 0 },
 ];
 
 export default players;
