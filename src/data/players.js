@@ -31,7 +31,7 @@ const players = [
   { id: 20, name: "amanda_lopes", heart: 3, absences: 0, externalEvents: 1 },
   { id: 21, name: "paulo_lima", heart: 3, absences: 0, externalEvents: 1 },
   { id: 22, name: "joao_menatti", heart: 3, absences: 0, externalEvents: 1 },
-  { id: 23, name: "jhonathan_soares", heart: 3, absences: 0, externalEvents: 0 },
+  { id: 23, name: "jhonathan_soares", heart: 3, absences: 0, externalEvents: 1 },
   { id: 24, name: "guilherme_moura", heart: 3, absences: 0, externalEvents: 1 },
   { id: 25, name: "gabriel_aquino", heart: 3, absences: 0, externalEvents: 0 },
   { id: 26, name: "yan_oliveira", heart: 3, absences: 0, externalEvents: 0 },
